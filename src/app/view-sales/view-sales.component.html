@@ -1,0 +1,34 @@
+<div class="sales-list">
+  <h2>Lista de Ventas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Productos</th>
+        <th>Cantidades</th>
+        <th>Total Vendido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sale of sales">
+        <td>{{ sale.date }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let product of sale.products">{{ product.name }}</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let quantity of sale.quantities">{{ quantity }}</li>
+          </ul>
+        </td>
+        <td>{{ sale.totalSold }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  
+  
+  

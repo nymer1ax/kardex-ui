@@ -1,0 +1,31 @@
+<div class="sale-card">
+  <h2>Crear Venta</h2>
+  <form (ngSubmit)="createSale()">
+    <div>
+      <label for="product">Producto:</label>
+      <select id="product" name="product" [(ngModel)]="selectedProduct">
+        <option *ngFor="let productId of availableProducts" [ngValue]="productId">{{ getProductById(productId) }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="quantity">Cantidad:</label>
+      <input type="number" id="quantity" name="quantity" [(ngModel)]="selectedQuantity" required>
+    </div>
+    <button type="submit">Crear Venta</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

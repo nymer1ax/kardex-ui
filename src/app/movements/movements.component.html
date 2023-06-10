@@ -1,0 +1,30 @@
+<div class="movements">
+  <h2>Movimientos</h2>
+  <table class="movement-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Tipo</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movement of movements">
+        <td>{{ movement.id }}</td>
+        <td>{{ movement.product.name }}</td>
+        <td>{{ movement.quantity }}</td>
+        <td>{{ movement.type }}</td>
+        <td>{{ movement.subtotal || 'N/A' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+

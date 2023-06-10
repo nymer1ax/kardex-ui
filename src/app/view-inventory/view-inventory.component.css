@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inventory-table {
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 50px;
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .inventory-table th {
+    background-color: #f2f2f2;
+    color: #444;
+  }
+  
+  .inventory-table td {
+    color: #666;
+  }
+  
+  .inventory-table td:first-child {
+    width: 50px;
+  }
+  
+  .inventory-table td:nth-child(2) {
+    width: 120px;
+  }
+  
+  .inventory-table td:nth-child(3) {
+    width: 200px;
+  }
+  
+  .inventory-table td:nth-child(4),
+  .inventory-table td:nth-child(5) {
+    width: 80px;
+  }
+  
